@@ -1,4 +1,4 @@
-# Hi, I'm Pan 👋
+# Hi, I'm Yu-Ting (Pan) 👋
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![Claude](https://img.shields.io/badge/-Claude-000000?style=flat-square&logo=anthropic&logoColor=white)
@@ -8,46 +8,37 @@
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
 
-📍 Taiwan | 🤖 AI-assisted developer | 🚀 Crypto systems builder
+📍 Taiwan | 💻 **Software Engineer (Go & Python)** | 🤖 **AI Tooling & Real-Time Backends**
 
-Python API Automation Crypto Trading Claude MEXC
+Software engineer building backend services, AI evaluation tooling, and developer tools. I use **Go** for real-time blockchain event indexing and monitoring, and **Python / TypeScript / JavaScript** for LLM-based tooling, retrieval, and web apps.
 
-Building AI-driven crypto trading systems and practical automation tools.
-Previously focused on smart contract security and Ethernaut challenges, now specializing in AI-driven development and system automation.
+---
 
-## Current Projects
+### 🚀 Featured Projects
 
-### 🤖 AI Grid Bot
+- **🔍 [`citecheck`](https://github.com/panyuti-ai/citecheck): Citation Verifier for AI-written Answers (Python)**
+  CLI that checks whether the pages cited in an AI-written Markdown answer actually support the claims they are attached to. It fetches each page (with a Wayback Machine fallback), ranks passages with **Okapi BM25**, and has an LLM judge (Claude Code or Codex CLI) label each citation. On my hand-labeled sets it matched 16–20 of 20 citations (v1, three runs) and 13 of 14 (v2); the README documents the misses and limitations.
 
-Automated spot trading bot for MEXC with dynamic grid logic, risk control, batch tracking, and metrics logging.
+- **📚 [`course-search`](https://github.com/panyuti-ai/course-search): Course Search & Planner for Feng Chia University (Node.js)**
+  Search and planning site covering 3,570 course sections (115-1), with an official-syllabus crawler, AI-generated syllabus summaries, AI course analysis, and a schedule planner. Express + PostgreSQL, deployed on Railway, with campus NID OAuth login.
 
-### 📊 Trading Metrics & Alerts
+- **⚡ Cross-Chain USDC Indexers (Go)**
+  [`cctp-bridge-monitor`](https://github.com/panyuti-ai/cctp-bridge-monitor) watches Circle CCTP V1 transfers across 7 chains (WebSocket subscriptions plus Solana polling), pairs sent/received events, resumes from checkpoints, and serves a live dashboard. [`usdc-indexer`](https://github.com/panyuti-ai/usdc-indexer) indexes USDC Transfer events on Ethereum into SQLite with a built-in dashboard.
 
-Operational monitoring with execution stats, daily reports, and Discord notifications.
+- **📈 [`crypto-grid-bot`](https://github.com/panyuti-ai/crypto-grid-bot): Grid Trading Bot (Python)**
+  Automated MEXC spot trading with dynamic grid logic, risk control, batch tracking, and Discord metrics and alerts.
 
-### 🧪 AI-assisted Dev Workflow
+---
 
-Using Claude to accelerate prototyping, debugging, and system iteration.
+### 🛠️ Tech Stack & Focus Areas
 
-## What I'm Doing
+- **Languages:** Go, Python, TypeScript, JavaScript, SQL
+- **AI tooling:** LLM APIs (Anthropic, OpenAI-compatible), LLM-as-judge evaluation, BM25 passage retrieval, AI-assisted development with Claude
+- **Backend:** Node.js / Express, Gin, REST APIs, PostgreSQL, SQLite, web crawling and data pipelines, blockchain RPC / event indexing
+- **Security background:** Wrote up 28 Ethernaut levels ([`ethernaut-writeups`](https://github.com/panyuti-ai/ethernaut-writeups)) while learning smart contract security
 
-* Building crypto trading tools for personal use
-* Exploring AI-assisted software engineering
-* Improving backend logic, monitoring, and automation
+---
 
-## Tech Stack
+### 📫 Contact
 
-* Python
-* REST API Integration
-* Crypto Exchange APIs
-* Automation Systems
-* AI-assisted Development
-
-## Background
-
-* Previously explored smart contract security through Ethernaut challenges
-* Developed interest in system design, automation, and practical engineering
-
-## Philosophy
-
-Build fast, verify carefully, and keep improving the system.
+- **Email:** panyouting1124@gmail.com
