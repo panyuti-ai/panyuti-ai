@@ -25,7 +25,7 @@ A Claude Code mod that shows which tests, builds, and type checks really ran aft
 Search and planning site covering 3,570 course sections (115-1), with an official-syllabus crawler, AI-generated syllabus summaries, AI course analysis, and a schedule planner. Express + PostgreSQL, deployed on Railway, with campus NID OAuth login.
 
 **04 &nbsp;·&nbsp; Real-time event indexers (Go)**
-[`cctp-bridge-monitor`](https://github.com/panyuti-ai/cctp-bridge-monitor) watches Circle CCTP V1 transfers across 7 chains (WebSocket subscriptions plus Solana polling), pairs sent/received events, resumes from checkpoints, and serves a live dashboard. [`usdc-indexer`](https://github.com/panyuti-ai/usdc-indexer) indexes USDC Transfer events on Ethereum into SQLite with a built-in dashboard.
+Long-running services that subscribe to event streams over WebSocket, pair related events across sources, resume from checkpoints after a crash, and serve a live dashboard. [`cctp-bridge-monitor`](https://github.com/panyuti-ai/cctp-bridge-monitor) tracks cross-chain USDC transfers across 7 networks (WebSocket subscriptions plus polling); [`usdc-indexer`](https://github.com/panyuti-ai/usdc-indexer) indexes USDC Transfer events on Ethereum into SQLite.
 
 ---
 
@@ -34,7 +34,7 @@ Search and planning site covering 3,570 course sections (115-1), with an officia
 - **AI tooling:** Claude Code and Codex CLI workflows, LLM APIs (Anthropic, OpenAI-compatible), Model Context Protocol (MCP), LLM-as-judge evaluation, BM25 passage retrieval
 - **Languages:** Go, Python, TypeScript, JavaScript, SQL, Bash
 - **Backend & infrastructure:** Node.js / Express, Gin, REST APIs, PostgreSQL, SQLite, web crawling and data pipelines, real-time event indexing, Docker, Linux, Git
-- **Security background:** Wrote up 28 Ethernaut levels ([`ethernaut-writeups`](https://github.com/panyuti-ai/ethernaut-writeups)) while learning smart contract security
+- **Security background:** Found and exploited the vulnerabilities in 28 Ethernaut smart contract security challenges, with a write-up for each ([`ethernaut-writeups`](https://github.com/panyuti-ai/ethernaut-writeups))
 
 ---
 
