@@ -1,14 +1,15 @@
-<h1><img src="assets/banner.svg" alt="Yu-Ting Pan, software engineer (Go and Python). AI tooling, real-time backends, blockchain data." width="100%"></h1>
+<h1><img src="assets/banner.svg" alt="Yu-Ting Pan, software engineer. Tools that check whether AI-written work is actually right, and the backends behind them." width="100%"></h1>
 
+![Go](https://img.shields.io/badge/Go-00ADD8?style=for-the-badge&logo=go&logoColor=white)
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![Claude](https://img.shields.io/badge/-Claude-000000?style=flat-square&logo=anthropic&logoColor=white)
-![Solidity](https://img.shields.io/badge/Solidity-363636?style=for-the-badge&logo=solidity&logoColor=white)
-![macOS](https://img.shields.io/badge/macOS-000000?style=for-the-badge&logo=apple&logoColor=white)
-![Node.js](https://img.shields.io/badge/Node.js-5FA04E?style=for-the-badge&logo=nodedotjs&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![Node.js](https://img.shields.io/badge/Node.js-5FA04E?style=for-the-badge&logo=nodedotjs&logoColor=white)
+![Claude](https://img.shields.io/badge/-Claude-000000?style=flat-square&logo=anthropic&logoColor=white)
 
-Computer Science graduate building backend services, AI evaluation tooling, and developer tools. I use **Go** for real-time blockchain event indexing and monitoring, and **Python / TypeScript / JavaScript** for LLM-based tooling, retrieval, and web apps.
+Software engineer in Taiwan. I build tools that check whether AI-written work is actually right (citations, tests, builds) and the backends that keep them running. I work with **Claude Code** and **Codex CLI** every day, and use **Go** and **Python / TypeScript** for the rest.
+
+**Now:** building small AI prototypes in public. One idea each, usable in a minute.
 
 ---
 
@@ -23,20 +24,17 @@ A Claude Code mod that shows which tests, builds, and type checks really ran aft
 **03 &nbsp;·&nbsp; [`course-search`](https://github.com/panyuti-ai/course-search): course search and planner for Feng Chia University (Node.js)**
 Search and planning site covering 3,570 course sections (115-1), with an official-syllabus crawler, AI-generated syllabus summaries, AI course analysis, and a schedule planner. Express + PostgreSQL, deployed on Railway, with campus NID OAuth login.
 
-**04 &nbsp;·&nbsp; Cross-chain USDC indexers (Go)**
-[`cctp-bridge-monitor`](https://github.com/panyuti-ai/cctp-bridge-monitor) watches Circle CCTP V1 transfers across 7 chains (WebSocket subscriptions plus Solana polling), pairs sent/received events, resumes from checkpoints, and serves a live dashboard. [`usdc-indexer`](https://github.com/panyuti-ai/usdc-indexer) indexes USDC Transfer events on Ethereum into SQLite with a built-in dashboard.
-
-**05 &nbsp;·&nbsp; [`crypto-grid-bot`](https://github.com/panyuti-ai/crypto-grid-bot): grid trading bot (Python)**
-Automated MEXC spot trading with dynamic grid logic, risk control, batch tracking, and Discord metrics and alerts.
+**04 &nbsp;·&nbsp; Real-time event indexers (Go)**
+Long-running services that subscribe to event streams over WebSocket, pair related events across sources, resume from checkpoints after a crash, and serve a live dashboard. [`cctp-bridge-monitor`](https://github.com/panyuti-ai/cctp-bridge-monitor) tracks cross-chain USDC transfers across 7 networks (WebSocket subscriptions plus polling); [`usdc-indexer`](https://github.com/panyuti-ai/usdc-indexer) indexes USDC Transfer events on Ethereum into SQLite.
 
 ---
 
 ### Tech Stack & Focus Areas
 
+- **AI tooling:** Claude Code and Codex CLI workflows, LLM APIs (Anthropic, OpenAI-compatible), Model Context Protocol (MCP), LLM-as-judge evaluation, BM25 passage retrieval
 - **Languages:** Go, Python, TypeScript, JavaScript, SQL, Bash
-- **AI tooling:** LLM APIs (Anthropic, OpenAI-compatible), Model Context Protocol (MCP), LLM-as-judge evaluation, BM25 passage retrieval, AI-assisted development with Claude
-- **Backend & infrastructure:** Node.js / Express, Gin, REST APIs, PostgreSQL, SQLite, web crawling and data pipelines, blockchain RPC / event indexing, Docker, Linux, Git
-- **Security background:** Wrote up 28 Ethernaut levels ([`ethernaut-writeups`](https://github.com/panyuti-ai/ethernaut-writeups)) while learning smart contract security
+- **Backend & infrastructure:** Node.js / Express, Gin, REST APIs, PostgreSQL, SQLite, web crawling and data pipelines, real-time event indexing, Docker, Linux, Git
+- **Security background:** Found and exploited the vulnerabilities in 28 Ethernaut smart contract security challenges, with a write-up for each ([`ethernaut-writeups`](https://github.com/panyuti-ai/ethernaut-writeups))
 
 ---
 
