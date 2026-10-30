@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 500" width="1200" height="500" role="img" aria-labelledby="t d">
   <title id="t">Yu-Ting Pan</title>
-  <desc id="d">Software engineer, Go and Python. AI tooling, real-time backends, blockchain data.</desc>
+  <desc id="d">Software engineer, Go and Python. AI tooling, verification, real-time backends.</desc>
   <defs>
     <radialGradient id="glow" cx="22%" cy="55%" r="75%">
       <stop offset="0" stop-color="#1a2028"/>
@@ -41,5 +41,5 @@
   <!-- horizon: the quiet right side is the release zone -->
   <line x1="72" y1="346" x2="1128" y2="346" stroke="#2a2f36" stroke-width="1"/>
   <line class="draw" x1="72" y1="346" x2="252" y2="346" stroke="#00ADD8" stroke-width="2"/>
-  <text class="mono rise d3" x="72" y="392">AI TOOLING  /  REAL-TIME BACKENDS  /  BLOCKCHAIN DATA</text>
+  <text class="mono rise d3" x="72" y="392">AI TOOLING  /  VERIFICATION  /  REAL-TIME BACKENDS</text>
 </svg>
