@@ -9,22 +9,25 @@
 
 Software engineer in Taiwan. I build tools that check whether AI-written work is actually right (citations, tests, builds) and the backends that keep them running. I work with **Claude Code** and **Codex CLI** every day, and use **Go** and **Python / TypeScript** for the rest.
 
-**Now:** building small AI prototypes in public. One idea each, usable in a minute.
+**Now:** building small AI prototypes in public. One idea each, usable in a minute. Latest: [`zhtw-guard`](https://github.com/panyuti-ai/zhtw-guard).
 
 ---
 
 ### Featured Projects
 
-**01 &nbsp;·&nbsp; [`citecheck`](https://github.com/panyuti-ai/citecheck): citation verifier for AI-written answers (Python)**
+**01 &nbsp;·&nbsp; [`zhtw-guard`](https://github.com/panyuti-ai/zhtw-guard): keeps Claude's Traditional Chinese replies clean (JavaScript)**
+A Claude Code plugin: a Stop hook that catches Simplified Chinese characters and stray Japanese or Korean in Traditional Chinese replies and asks Claude to rewrite once. I benchmarked it on 50 prompts × 2 variants × 3 runs per model: Claude Haiku 5.5 went from 15 answers written in Simplified to 0 with the plugin; Codex CLI (GPT-6.1-Sol) had 0 without it. The repo has the prompts, all raw answers, and the mistakes I fixed along the way (Taiwan's own term lists use some "Mainland" words; OpenCC flagged 群 and 秘 as Simplified).
+
+**02 &nbsp;·&nbsp; [`citecheck`](https://github.com/panyuti-ai/citecheck): citation verifier for AI-written answers (Python)**
 CLI that checks whether the pages cited in an AI-written Markdown answer actually support the claims they are attached to. It fetches each page (with a Wayback Machine fallback), ranks passages with **Okapi BM25**, and has an LLM judge (Claude Code or Codex CLI) label each citation. On my hand-labeled sets it matched 16–20 of 20 citations (v1, three runs) and 13 of 14 (v2); the README documents the misses and limitations.
 
-**02 &nbsp;·&nbsp; [`ship-check-mods`](https://github.com/panyuti-ai/ship-check-mods): verification board for Claude Code (JavaScript)**
+**03 &nbsp;·&nbsp; [`ship-check-mods`](https://github.com/panyuti-ai/ship-check-mods): verification board for Claude Code (JavaScript)**
 A Claude Code mod that shows which tests, builds, and type checks really ran after Claude changed your code, how they ended, and whether each result still matches the files on disk. A check counts as passed only when the tool that ran it said so; results go stale when tracked files change. Reads exit status from both Bash and PowerShell tool calls, with the cases it cannot trust marked Unknown.
 
-**03 &nbsp;·&nbsp; [`course-search`](https://github.com/panyuti-ai/course-search): course search and planner for Feng Chia University (Node.js)**
+**04 &nbsp;·&nbsp; [`course-search`](https://github.com/panyuti-ai/course-search): course search and planner for Feng Chia University (Node.js)**
 Search and planning site covering 3,570 course sections (115-1), with an official-syllabus crawler, AI-generated syllabus summaries, AI course analysis, and a schedule planner. Express + PostgreSQL, deployed on Railway, with campus NID OAuth login.
 
-**04 &nbsp;·&nbsp; Real-time event indexers (Go)**
+**05 &nbsp;·&nbsp; Real-time event indexers (Go)**
 Long-running services that subscribe to event streams over WebSocket, pair related events across sources, resume from checkpoints after a crash, and serve a live dashboard. [`cctp-bridge-monitor`](https://github.com/panyuti-ai/cctp-bridge-monitor) tracks cross-chain USDC transfers across 7 networks (WebSocket subscriptions plus polling); [`usdc-indexer`](https://github.com/panyuti-ai/usdc-indexer) indexes USDC Transfer events on Ethereum into SQLite.
 
 ---
